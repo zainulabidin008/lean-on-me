@@ -20,13 +20,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  // final List images = [
-  //   'assets/Group 1171275505.png',
-  //   'assets/Group 1171275476.png',
-  //   'assets/Group 1171275475.png',
-  //   'assets/Group 1171275504.png'
-  // ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,17 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // SizedBox(
-                //   height: 5.h,
-                // ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    CircleAvatar(
-                      radius: 2.5.h,
-                      backgroundImage: const AssetImage('assets/profile.png'),
-                    )
-                  ],
+                SizedBox(
+                  height: 5.h,
                 ),
                 CustomContainerWidget(
                   ontap: () {
@@ -61,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Get.to(() => const MentalHealthHomeScreen());
                   },
                   image: 'assets/Rectangle 1312.png',
-                  title: 'Mental Health Services',
+                  title: 'Alcohol and Drug\nSupport Facilities',
                 ),
                 CustomContainerWidget(
                   ontap: () {
@@ -77,35 +61,6 @@ class _HomeScreenState extends State<HomeScreen> {
                   image: 'assets/Rectangle 1310.png',
                   title: 'Drug Facts',
                 ),
-
-                // Expanded(
-                //   child: ListView.builder(
-                //     padding: EdgeInsets.zero,
-                //     itemCount: images.length,
-                //     itemBuilder: (context, index) {
-                //       return GestureDetector(
-                //         onTap: () {
-                //           if (index == 0) {
-                //             Get.to(() => const NewsScreen());
-                //           } else if (index == 1) {
-                //             log(index);
-                //             Get.to(() => const MentalHealthHomeScreen());
-                //           } else if (index == 2) {
-                //             log(index);
-                //             Get.to(() => const SupportServices());
-                //           } else {
-                //             Get.to(() => const DrugsFactsServices());
-                //           }
-                //         },
-                //         child: Image(
-                //           image: AssetImage(
-                //             images[index],
-                //           ),
-                //         ),
-                //       );
-                //     },
-                //   ),
-                // ),
                 SizedBox(
                   height: 9.h,
                 ),
@@ -122,7 +77,7 @@ class CustomContainerWidget extends StatelessWidget {
   final String image;
   final String title;
   final VoidCallback ontap;
-  CustomContainerWidget(
+  const CustomContainerWidget(
       {super.key,
       required this.ontap,
       required this.image,
@@ -155,7 +110,7 @@ class CustomContainerWidget extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 20.px,
+                height: 15.px,
               ),
               GestureDetector(
                 onTap: ontap,
@@ -165,7 +120,7 @@ class CustomContainerWidget extends StatelessWidget {
                   // color: Colors.red,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Color(0xff06A54B),
+                    color: const Color(0xff4E95D9),
                   ),
                   child: Center(
                     child: Text(

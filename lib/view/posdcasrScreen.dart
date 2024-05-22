@@ -7,7 +7,7 @@ class PodCastScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Uri _url = Uri.parse('https://www.podpage.com/lean-on-me/');
+    final Uri _url = Uri.parse('https://www.podpage.com/lean-on-me/episodes/');
     Future<void> _launchUrl() async {
       if (!await launchUrl(_url)) {
         throw Exception('Could not launch $_url');
@@ -25,7 +25,7 @@ class PodCastScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/splash.png',
+                    'assets/bupa1.png',
                     height: 250.px,
                     width: 250.px,
                   ),
@@ -55,22 +55,24 @@ So, I’ve made it my purpose to provide a platform where you can hear from fami
                       _launchUrl();
                     },
                     child: Container(
-                      padding: EdgeInsets.all(8),
+                      padding: EdgeInsets.all(2),
                       alignment: Alignment.center,
-                      margin: EdgeInsets.symmetric(horizontal: 12.h),
+                      margin: EdgeInsets.symmetric(horizontal: 8.h),
                       decoration: BoxDecoration(
-                          border: Border.all(color: Colors.indigo),
-                          color: Colors.green),
+                        border: Border.all(color: Colors.indigo),
+                        color: Color(0xff4E95D9),
+                      ),
                       child: const Text(
+                        maxLines: 2,
                         textAlign: TextAlign.center,
-                        'Listen to the Lean on Me Podcast Series',
+                        'Listen to the Lean on Me\nPodcast Series',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
                   ),
                   SizedBox(
                     height: 100.px,
-                  )
+                  ),
                 ],
               ),
             ),

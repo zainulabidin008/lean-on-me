@@ -16,23 +16,26 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(const Duration(seconds: 5)).then((value) =>
-    Get.offAll(()=>const BottomNavBar()));
+    Future.delayed(const Duration(seconds: 5))
+        .then((value) => Get.offAll(() => const BottomNavBar()));
   }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: const Color(0xff06A54B),
-
+    return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
-        child: SizedBox(
-          height: MediaQuery.of(context).size.height-6.h,
-          width: MediaQuery.of(context).size.width-6.h,
-          child: Image.asset(
-            'assets/splash.png',
-
-          ),
-        ),
+        child: Image.asset('assets/bupa1.png'),
       ),
     );
+    // Center(
+    //   child: SizedBox(
+    //     height: MediaQuery.of(context).size.height - 6.h,
+    //     width: MediaQuery.of(context).size.width - 6.h,
+    //     child: Image.asset(
+    //       'assets/splash.png',
+    //     ),
+    //   ),
+    // ),
   }
 }

@@ -10,7 +10,7 @@ class TeleHealthScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Uri url = Uri.parse('https://psych2u.com.au/');
+    final Uri url = Uri.parse('https:www.bupa.com.au/telehealth');
     Future<void> _launchUrl() async {
       if (!await launchUrl(url)) {
         throw Exception('Could not launch $url');
@@ -26,42 +26,36 @@ class TeleHealthScreen extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 2.h),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              // Text(
-              //   'Introduction:',
-              //   style: TextStyle(
-              //       fontFamily: 'Playfair',
-              //       fontSize: 14.px,
-              //       fontWeight: FontWeight.w600,
-              //       color: const Color(0xff444444)),
-              // ),
               SizedBox(height: 2.h),
               Text(
-                '''Telehealth is all about having a consultation with a healthcare provider by phone or video call.
-
-Many GPs, specialists, and other healthcare providers now offer a telehealth consultation when a physical examination isn’t necessary. It’s not intended to replace essential visits to the doctor, but rather be a convenient solution when you can’t see a doctor face to face.
+                '''Telehealth is all about having a consultation with a healthcare provider by phone or video call.Many GPs, specialists, and other healthcare providers now offer a telehealth consultation when a physical examination isn’t necessary. It’s not intended to replace essential visits to the doctor, but rather be a convenient solution when you can’t see a doctor face to face.
 
 Telehealth has been transformational to Australia’s universal healthcare program, Medicare. It has played a critical role in ensuring the continuity of care for hundreds of thousands of Australian patients. 
 
 Telehealth allows you to get the health care you need, where and when you need it.
 ''',
                 style: TextStyle(
-                    fontFamily: 'Playfair',
-                    fontSize: 14.px,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black),
+                  fontFamily: 'Playfair',
+                  fontSize: 14.px,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black,
+                ),
               ),
+              SizedBox(height: 3.h),
               InkWell(
                 onTap: () {
-                  Get.to(() => TeleHealthButton());
+                  _launchUrl();
                 },
                 child: Container(
+                  height: 40.px,
                   padding: EdgeInsets.symmetric(horizontal: 3.h, vertical: 1.h),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      border: Border.all(color: Colors.indigo),
-                      color: Colors.green),
+                    border: Border.all(color: Colors.indigo),
+                    color: Color(0xff4E95D9),
+                  ),
                   child: Text(
-                    "Access a GP or a Psychologist/Psychiatrist to discuss the Mental Health support, you may need.",
+                    "Access BUPA Telehealth",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 10.px,

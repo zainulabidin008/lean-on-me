@@ -87,6 +87,9 @@ flutter:
       fonts:
         - asset: founts/PlayfairDisplay-Bold.ttf
         - asset: founts/Playfair Display Regular.ttf
+    - family: Poppins
+      fonts:
+        - asset: founts/Poppins-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -63,7 +63,7 @@ Developed by Turning Point, Self Help Addiction Resource Centre (SHARC) and the 
                       'www.breakthroughforfamilies.com',
                       textAlign: TextAlign.center,
                       style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                       overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     ),

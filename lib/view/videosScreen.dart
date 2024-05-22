@@ -19,28 +19,28 @@ class EducationalVideosScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 5.h,
+                height: 12.h,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  // Text(
-                  //   'Educational Videos',
-                  //   style: TextStyle(
-                  //       fontFamily: 'Playfair',
-                  //       fontSize: 18.px,
-                  //       fontWeight: FontWeight.bold,
-                  //       color: const Color(0xff050505)),
-                  // ),
-                  CircleAvatar(
-                    radius: 3.h,
-                    backgroundImage: const AssetImage('assets/profile.png'),
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 1.h,
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.end,
+              //   children: [
+              //     // Text(
+              //     //   'Educational Videos',
+              //     //   style: TextStyle(
+              //     //       fontFamily: 'Playfair',
+              //     //       fontSize: 18.px,
+              //     //       fontWeight: FontWeight.bold,
+              //     //       color: const Color(0xff050505)),
+              //     // ),
+              //     CircleAvatar(
+              //       radius: 3.h,
+              //       backgroundImage: const AssetImage('assets/profile.png'),
+              //     )
+              //   ],
+              // ),
+              // SizedBox(
+              //   height: 1.h,
+              // ),
               // Text(
               //   'Introduction:',
               //   style: TextStyle(
@@ -49,20 +49,16 @@ class EducationalVideosScreen extends StatelessWidget {
               //       fontWeight: FontWeight.w600,
               //       color: const Color(0xff444444)),
               // ),
-              SizedBox(
-                height: 1.h,
-              ),
               Text(
                 '''The Educational Videos library has been compiled and put together with content by qualified Mental Health professionals and is designed to help provide you with support and insight into the many questions you may have whilst supporting a family member, friend or loved one during their alcohol, drug or gambling addiction.
                 
 This library of content is all about supporting you!
 ''',
                 style: TextStyle(
-                  fontFamily: 'Playfair',
-                  fontSize: 12.px,
-                  fontWeight: FontWeight.w400,
-                  // color: const Color(0xffA6A6A6),
-                ),
+                    fontFamily: 'Playfair',
+                    fontSize: 14.px,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.black),
               ),
               SizedBox(
                 height: 12.h,
@@ -76,8 +72,9 @@ This library of content is all about supporting you!
                   padding: EdgeInsets.symmetric(horizontal: 3.h, vertical: 1.h),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.px),
-                      color: Colors.green),
+                    borderRadius: BorderRadius.circular(20.px),
+                    color: Color(0xff4E95D9),
+                  ),
                   child: Text(
                     "Click to access the Educational Videos Library",
                     style: TextStyle(

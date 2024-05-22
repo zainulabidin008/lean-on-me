@@ -49,8 +49,9 @@ class EducationalButtonScreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 3.h, vertical: 1.h),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.indigo),
-                    color: Colors.green),
+                  border: Border.all(color: Colors.indigo),
+                  color: Color(0xff4E95D9),
+                ),
                 child: Text(
                   "How does rehab treatment for youth differ from rehab treatment for adults?",
                   style: TextStyle(
@@ -73,8 +74,9 @@ class EducationalButtonScreen extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 3.h, vertical: 1.h),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.indigo),
-                    color: Colors.green),
+                  border: Border.all(color: Colors.indigo),
+                  color: Color(0xff4E95D9),
+                ),
                 child: Text(
                   "What is the most effective treatment plan to support long-term recovery?",
                   style: TextStyle(
